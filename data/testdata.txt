@@ -1,1 +1,25 @@
-yes i want to create a test file 
+<dissertation> 	[ dɪ̱sə(r)te͟ɪʃ(ə)n ]
+	 dissertations 
+	  N-COUNT:  oft N on  n  
+	  A dissertation is a long formal piece of writing on a particular subject, especially for a university degree.  
+	    He is currently writing a dissertation on the Somali civil war.    
+	
+<end>
+<disservice> 	[ dɪ̱ssɜ͟ː(r)vɪs ]
+	  N-SING:  oft N to  n  
+	  If you do someone or something a disservice, you harm them in some way. [FORMAL]  
+	    He said the protesters were doing a disservice to the nation...    
+	    You could do yourself a grave disservice by revealing all to a potential rival.    
+	
+<end>
+<dissident> 	[ dɪ̱sɪdənt ]
+	 dissidents 
+	 1)   N-COUNT  Dissidents are people who disagree with and criticize their government, especially because it is undemocratic.  
+	    ...political dissidents.    
+	    ...former Soviet dissident Natan Schransky.    
+	 2)   ADJ:  ADJ  n  Dissident people disagree with or criticize their government or a powerful organization they belong to.  
+	    ...a dissident Russian novelist...    
+	    She was suspected of having links with a dissident group.    
+	    ...dissident shareholders.    
+	
+
