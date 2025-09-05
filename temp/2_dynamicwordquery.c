@@ -6,6 +6,8 @@
 int main(int argc, char *argv[]) {
     char *search_word = argv[1];
 
+    printf("searching word is %s\n", search_word);
+
     FILE *file =
 	fopen("/home/jack/develop/c/word_query/data/testdata.txt", "r");
     /* char *search_word = "<disservice>"; */

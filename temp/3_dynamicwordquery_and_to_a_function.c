@@ -3,16 +3,17 @@
 #include <stdlib.h>
 
 #include "/home/jack/develop/c/lib/stringutil.h"
-int main() {
+
+char *query(char *searchword);
+
+char *query(char *searchword) {
     FILE *file =
 	fopen("/home/jack/develop/c/word_query/data/testdata.txt", "r");
-    char *search_word = "<disservice>";
     char *ending_word = "<end>";
     char a;
     char *word = calloc(20, sizeof(char));
     char *p;
     p = word;
-
     bool isstore = false;
     // use for stroe the explanation of the searching word;
     char *string = calloc(200000, sizeof(char));
@@ -29,9 +30,9 @@ int main() {
 	if (a == ' ' || a == '\n' || a == '\r' || a == '\t') {
 	    *p = '\0';
 	    p = word;
-	    printf("word is %s\n", word);
+	    /* printf("word is %s\n", word); */
 	    if (isstore == false) {
-		if (isequal(search_word, word)) {
+		if (isequal(searchword, word)) {
 		    isstore = true;
 		}
 	    } else {
@@ -40,8 +41,16 @@ int main() {
 	    *p = a;
 	    p++;
 	}
-	/* printf("explanation is %s\n", string); */
     }
-    // print the explanation of the searching word;
-    printf("explanation is %s\n", string);
+    return string;
+}
+
+int main(int argc, char *argv[]) {
+    for (int i = 1; i < argc; i++) {
+	char *search_word = argv[i];
+	printf("searching word is %s\n", search_word);
+	char *result = query(search_word);
+	// print the explanation of the searching word;
+	printf("explanation is %s\n", result);
+    }
 }
