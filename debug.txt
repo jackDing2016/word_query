@@ -1,0 +1,77 @@
+rand index is 242
+dsw is <rain>
+EXPLANATION OF WORD rain is:
+ 	[ re͟ɪn ]
+	  ♦♦  
+	 rains, raining, rained 
+	 1)   N-UNCOUNT:  also the N Rain is water that falls from the clouds in small drops.  
+	    I hope you didn't get soaked standing out in the rain...    
+	    A spot of rain fell on her hand.    
+	 2)   N-PLURAL:  usu the N In countries where rain only falls in certain seasons, this rain is referred to as the rains.  
+	    ...the spring, when the rains came...    
+	    The rains have failed again in the Horn of Africa.    
+	 3)   VERB  When rain falls, you can say that it is raining.  
+	    [it V] It rained the whole weekend...    
+	    [it V] It was raining hard, and she hadn't an umbrella.    
+	 4)  V-ERG If someone rains blows, kicks, or bombs on a person or place, the person or place is attacked by many blows, kicks, or bombs.  
+	    [V  n  on  n ] The police, raining blows on rioters and spectators alike, cleared the park...    
+	    [V on  n ] Rockets, mortars and artillery rounds rained on buildings.    
+	 PHR-V-ERG 
+	 Rain down means the same as rain.   V  P   n  (not  pron ) Fighter aircraft rained down high explosives... V  P  on  n  Grenades and mortars rained down on Dubrovnik.   
+	 5)   N-SING:  N of  n  A rain of things is a large number of things that fall from the sky at the same time.  
+	    A rain of stones descended on the police.    
+	 6)   PHRASE  You can use the expression it never rains but it pours to mean that several unfortunate events often happen at the same time.  
+	 7)   PHRASE:   v-link  PHR If you say that someone is as right as rain, you mean that they are completely well or healthy again, for example when they have recovered from an illness or a shock. [INFORMAL]  
+	    You'll be as right as rain as soon as you are back in your own home with your baby.    
+	 8)   PHRASE  If you say that someone does something rain or shine, you mean that they do it regularly, without being affected by the weather or other circumstances.  
+	    Frances took her daughter walking every day, rain or shine.    
+	  Phrasal Verbs:  
+	  - rain off  
+	  - rain out  
+	
+<end>
+<
+rand index is 124
+dsw is <kettle>
+EXPLANATION OF WORD kettle is:
+ 	[ ke̱t(ə)l ]
+	 kettles 
+	 1)   N-COUNT  A kettle is a covered container that you use for boiling water. It has a handle, and a spout for the water to come out of. [mainly BRIT]  
+	    I'll put the kettle on and make us some tea.    
+	  N-COUNT:  usu N of  n  
+	 A kettle of water is the amount of water contained in a kettle.   Pour a kettle of boiling water over the onions.   (in AM, use teakettle) 
+	 2)   N-COUNT  A kettle is a metal pot for boiling or cooking things in. [mainly AM]  
+	    Put the meat into a small kettle.    
+	(in BRIT, use pan)
+	 3)   PHRASE:   v-link  PHR If you say that something is a different kettle of fish, you mean that it is very different from another related thing that you are talking about. [INFORMAL]  
+	    Playing for the reserve team is a totally different kettle of fish.    
+	
+<end>
+
+rand index is 120
+dsw is <charred>
+EXPLANATION OF WORD charred is:
+ 	[ tʃɑ͟ː(r)d ]
+	 ADJ-GRADED: usu ADJ  n  
+	  Charred plants, buildings, or vehicles have been badly burnt and have become black because of fire.  
+	    ...the charred remains of a tank.    
+	  Syn:  
+	  burnt  
+	
+<end>
+
+rand index is 26
+dsw is <inadequacy>
+EXPLANATION OF WORD inadequacy is:
+ 	[ ɪnæ̱dɪkwəsi ]
+	 inadequacies 
+	 1)   N-VAR:  oft the N of  n  The inadequacy of something is the fact that there is not enough of it, or that it is not good enough.  
+	    ...the inadequacy of the water supply...    
+	    The inadequacies of the current system have already been recognised...    
+	    This man drank rather heavily in an effort to come to terms with his own inadequacies.    
+	  Syn:  
+	   insufficiency   
+	  Ant:  
+	  adequacy  
+	 2)  N-UNCOUNT If someone has feelings of inadequacy, they feel that they do not have the qualities and abilities necessary to do something or to cope with life in general.  
+	    The fe

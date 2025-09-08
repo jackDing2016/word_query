@@ -4,9 +4,8 @@
 
 #include "/home/jack/develop/c/lib/stringutil.h"
 
-char *query(char *searchword);
 size_t getsize(char *s);
-char *decoratesearchword(char *searchword);
+void decoratesearchword(char *dest, char *source);
 size_t getsize(char *s) {
     size_t res = 0;
     while (*s++ != '\0') {
@@ -14,18 +13,18 @@ size_t getsize(char *s) {
     }
     return res;
 }
-char *decoratesearchword(char *searchword) {
-    size_t size = getsize(searchword);
-    char *res = calloc(size + 2, sizeof(char));
-    char *p;
-    p = res;
-    *p++ = '<';
-    while ((*p++ = *searchword++) != '\0');
-    *p = '>';
-    return res;
+void decoratesearchword(char *dest, char *source) {
+    *dest++ = '<';
+    while ((*dest++ = *source++) != '\0');
+    *(--dest) = '>';
+    *(++dest) = '\0';
 }
 
 char *query(char *searchword) {
+    /* char *dsh = decoratesearchword(searchword); */
+    char *dsw = calloc(30, sizeof(char));
+    decoratesearchword(dsw, searchword);
+    printf("dsw is %s\n", dsw);
     FILE *file =
 	fopen("/home/jack/develop/c/word_query/data/testdata.txt", "r");
     char *ending_word = "<end>";
@@ -51,7 +50,7 @@ char *query(char *searchword) {
 	    p = word;
 	    /* printf("word is %s\n", word); */
 	    if (isstore == false) {
-		if (isequal(searchword, word)) {
+		if (isequal(dsw, word)) {
 		    /* printf("its true word\n "); */
 		    isstore = true;
 		}
@@ -65,16 +64,3 @@ char *query(char *searchword) {
     return string;
 }
 
-int main(int argc, char *argv[]) {
-    for (int i = 1; i < argc; i++) {
-	char *search_word = argv[i];
-	/* printf("searching word is %s\n", search_word); */
-	char *result = query(search_word);
-
-	/* char *dsh = decoratesearchword(search_word); */
-	/* printf("dsh is %s\n", decoratesearchword); */
-	/* char *result = query(dsh); */
-	// print the explanation of the searching word;
-	printf("explanation is %s\n", result);
-    }
-}

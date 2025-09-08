@@ -1,0 +1,2 @@
+
+char *query(char *searchword);
