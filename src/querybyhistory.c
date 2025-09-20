@@ -5,8 +5,8 @@
 #include <unistd.h>
 
 #include "/home/jack/develop/c/word_history/src/word_history.h"
+#include "/home/jack/develop/c/word_query/src/querybyhistory.h"
 #include "/home/jack/develop/c/word_query/src/wordquery.h"
-void randomqueryword(int n);
 
 void randomqueryword(int n) {
     arraylist *wl = getallhistory();
@@ -19,8 +19,9 @@ void randomqueryword(int n) {
 	int index = rand() % (wordcount + 1);
 	printf("rand index is %d\n", index);
 	char *word = arraylist_get(wl, index);
-	char *wordexplain = query(word);
-	printf("EXPLANATION OF WORD %s is:\n %s\n", word, wordexplain);
+	/* char *wordexplain = query(word); */
+	struct wordstruct *w = query(word);
+	printf("EXPLANATION OF WORD %s is:\n %s\n", w->name, w->explaination);
     }
 }
-int main() { randomqueryword(5); }
+/* int main() { randomqueryword(1); } */

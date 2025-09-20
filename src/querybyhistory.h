@@ -1,0 +1,2 @@
+
+void randomqueryword(int n);
