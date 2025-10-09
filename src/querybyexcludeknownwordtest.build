@@ -1,0 +1,1 @@
+gcc querybyexcludeknownwordtest.c querybyexcludeknownword.c wordquery.c /home/jack/develop/c/lib/datastructs-c/arraylist.c /home/jack/develop/c/lib/datastructs-c/hashtable.c /home/jack/develop/c/lib/string.c /home/jack/develop/c/lib/stringutil.c /home/jack/develop/c/word_parse/src/wordindex.c /home/jack/develop/c/word_parse/src/indexservice.c

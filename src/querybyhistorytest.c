@@ -1,3 +1,14 @@
 #include "querybyhistory.h"
 
-int main() { randomqueryword(1); }
+void randomquerywordtest();
+void randomquerywordandhidesearchwordtest();
+int main() {
+    /* randomquerywordtest(); */
+    randomquerywordandhidesearchwordtest();
+}
+
+void randomquerywordtest() { randomqueryword(1); }
+
+void randomquerywordandhidesearchwordtest() {
+    randomquerywordandhidesearchword(1);
+}

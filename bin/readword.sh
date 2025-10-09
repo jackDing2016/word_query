@@ -1,2 +1,2 @@
 clear
-./clientofquerybyhistory.out
+./a.out

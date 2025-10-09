@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+// that's a very very very good example for pointer!
 int main() {
     char **strarr = malloc(sizeof(*strarr) * 2);
     char *ele_one = calloc(2, sizeof(char));

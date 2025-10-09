@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+// that is a very very very good example for pointer!
 // create a string array and set some element in it and print it by loop
 int main() {
     char **arr = malloc(sizeof(*arr) * 10);

@@ -25,3 +25,20 @@ void randomqueryword(int n) {
     }
 }
 /* int main() { randomqueryword(1); } */
+void randomquerywordandhidesearchword(int n) {
+    arraylist *wl = getallhistory();
+    int wordcount = arraylist_size(wl);
+    // just can be call once, so it is out of the loop
+    srand(time(NULL) - getpid());
+    for (int i = 0; i < n; i++) {
+	/* srand(time(0)); */
+	/* srand((time(NULL) & 0xFFFF) | (getpid() << 16)); */
+	int index = rand() % (wordcount + 1);
+	printf("rand index is %d\n", index);
+	char *word = arraylist_get(wl, index);
+	/* char *wordexplain = query(word); */
+	struct wordstruct *w = queryandhidesearchword(word);
+	printf("EXPLANATION OF WORD %s is:\n %s\n", w->name, w->explaination);
+    }
+}
+
