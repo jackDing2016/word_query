@@ -2,12 +2,27 @@
 #include <time.h>
 /* #include <sys/types.h> */
 /* #include <iostream> */
+#include <string.h>
 #include <unistd.h>
 
 #include "/home/jack/develop/c/word_history/src/word_history.h"
 #include "/home/jack/develop/c/word_query/src/querybyhistory.h"
-#include "/home/jack/develop/c/word_query/src/wordquery.h"
-
+struct wordstruct *randomqueryword_version2() {
+    arraylist *wordhistorylist = getallhistory();
+    int wordhistorylistsize = arraylist_size(wordhistorylist);
+    srand(time(NULL));
+    // rand number for word history list
+    int index = rand() % (wordhistorylistsize + 1);
+    /* printf( */
+	/* "index which is generated randomly and is in word history list is %d\n", */
+	/* index); */
+    char *word = arraylist_get(wordhistorylist, index);
+    char *dsw = calloc(strlen(word) + 2, sizeof(char));
+    decoratesearchword(dsw, word);
+    /* printf("the word which would be queried is %s\n", dsw); */
+    struct wordstruct *wordstruct = querybyindex(dsw);
+    return wordstruct;
+}
 void randomqueryword(int n) {
     arraylist *wl = getallhistory();
     int wordcount = arraylist_size(wl);

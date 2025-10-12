@@ -9,3 +9,4 @@ struct wordstruct *query(char *searchword);
 
 struct wordstruct *queryandhidesearchword(char *searchword);
 struct wordstruct *querybyindex(char *searchword);
+void decoratesearchword(char *dest, char *source);

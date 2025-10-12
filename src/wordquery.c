@@ -10,7 +10,7 @@
 #include "/home/jack/develop/c/word_parse/src/wordindex.h"
 
 size_t getsize(char *s);
-void decoratesearchword(char *dest, char *source);
+/* void decoratesearchword(char *dest, char *source); */
 
 size_t getsize(char *s) {
     size_t res = 0;

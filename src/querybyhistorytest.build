@@ -1,0 +1,1 @@
+gcc querybyhistorytest.c querybyhistory.c /home/jack/develop/c/lib/datastructs-c/arraylist.c /home/jack/develop/c/word_history/src/word_history.c /home/jack/develop/c/word_parse/src/indexservice.c /home/jack/develop/c/lib/datastructs-c/hashtable.c /home/jack/develop/c/word_parse/src/wordindex.c /home/jack/develop/c/lib/string.c /home/jack/develop/c/lib/stringutil.c wordquery.c
