@@ -5,8 +5,27 @@
 #include <string.h>
 #include <unistd.h>
 
+#include "/home/jack/develop/c/lib/string.h"
 #include "/home/jack/develop/c/word_history/src/word_history.h"
 #include "/home/jack/develop/c/word_query/src/querybyhistory.h"
+struct wordstruct *randomqueryword_version3() {
+    arraylist *randomsorthistorylist = loadrandomsorthistory();
+    struct string *wordstring = arraylist_remove(randomsorthistorylist, 0);
+    char *word = wordstring->value;
+    printf("word is %s\n", word);
+    char *dsw = calloc(strlen(word) + 2, sizeof(char));
+    decoratesearchword(dsw, word);
+    /* printf("the word which would be queried is %s\n", dsw); */
+    struct wordstruct *wordstruct = querybyindex(dsw);
+    // over write the random history to file
+    arraylist *towrite = arraylist_create();
+    for (int i = 0; i < arraylist_size(randomsorthistorylist); i++) {
+	struct string *s = arraylist_get(randomsorthistorylist, i);
+	arraylist_add(towrite, s->value);
+    }
+    writehistory(towrite);
+    return wordstruct;
+}
 struct wordstruct *randomqueryword_version2() {
     arraylist *wordhistorylist = getallhistory();
     int wordhistorylistsize = arraylist_size(wordhistorylist);
@@ -14,8 +33,9 @@ struct wordstruct *randomqueryword_version2() {
     // rand number for word history list
     int index = rand() % (wordhistorylistsize + 1);
     /* printf( */
-	/* "index which is generated randomly and is in word history list is %d\n", */
-	/* index); */
+    /* "index which is generated randomly and is in word history list is %d\n",
+     */
+    /* index); */
     char *word = arraylist_get(wordhistorylist, index);
     char *dsw = calloc(strlen(word) + 2, sizeof(char));
     decoratesearchword(dsw, word);
